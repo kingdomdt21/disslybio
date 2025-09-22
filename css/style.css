@@ -1,0 +1,47 @@
+body {
+  padding-top: auto;
+}
+
+.navbar-brand img {
+  width: 50%;
+  border-radius: 50%;
+}
+.brand {
+  margin: 0 20px;
+}
+.chantrang{
+  margin-top: 20px;
+  padding: 20px;
+}
+.title-h
+{
+    color: #fff;
+}
+.title-h p a{
+    color: #fff;
+    text-decoration: none;
+}
+.title-h p a:hover{
+    font-weight: bold;
+}
+
+#scrollTopBtn {
+  display: none; /* Ẩn ban đầu */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background-color: #555;
+}
