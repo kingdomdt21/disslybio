@@ -109,3 +109,13 @@
 .linksvg:hover{
   filter: brightness(0);
 }
+
+.responsive-svg .font-text {
+  font-size: 3vw; /* vw = viewport width */
+  fill: #fff;
+}
+
+.responsive-svg .font-text1 {
+  font-size: 1.1vw;
+  fill: #6e2102;
+}
