@@ -1,32 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 body {
   padding-top: auto;
 }
 
-.navbar-brand img {
-  width: 50%;
+.moman {
+  height: 600px;
+  background: rgb(255, 173, 159);
+  border-bottom-left-radius: 50% 15%;
+  border-bottom-right-radius: 50% 15%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4b1b03;
+}
+
+.logo {
   border-radius: 50%;
+  width: 150px;
 }
-.brand {
-  margin: 0 20px;
+.moman h1 {
+  color: white;
+  font-size: 80px;
+  font-family: Georgia, serif;
 }
-.chantrang{
+.khauhieu {
+  font-family: "Allura", cursive;
+  font-size: 40px;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+}
+.link a {
+  color: #4b1b03;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+.link a:hover {
+  color: rgb(7, 58, 134);
+}
+.link a h4 {
+  font-size: 20px;
+}
+.anh_de {
+  display: flex;
+  justify-content: center;
+  margin-top: -190px;
+}
+.anh_de img {
+  width: 800px;
+}
+
+.container-lg {
+  display: flex;
+  margin: auto;
+  margin-top: 100px;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10%;
+}
+.text-ac .h4,
+.text-ac.h1,
+.sanpham,
+.card-title {
+  color: #4b1b03;
+}
+.text-ac h1 {
+  margin-bottom: 25px;
+}
+.text-ac p {
+  font-size: 20px;
+  text-align: justify;
+}
+.text-ac a {
+  display: flex;
+  color: #4b1b03;
+  text-decoration: none;
+  font-weight: bold;
+  justify-content: flex-end;
+  font-size: 22px;
+}
+.text-ac a:hover {
+  color: rgb(255, 0, 0);
+}
+
+.float-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.float-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about-seller {
+  margin-top: 50px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.sanpham {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.custom-card {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.link-hang {
+  color: #4b1b03;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link-hang:hover {
+  color: red;
+}
+
+.chantrang {
   margin-top: 20px;
   padding: 20px;
 }
-.title-h
-{
-    color: #fff;
+.title-h {
+  color: #fff;
 }
-.title-h p a{
-    color: #fff;
-    text-decoration: none;
+.title-h p a {
+  color: #fff;
+  text-decoration: none;
 }
-.title-h p a:hover{
-    font-weight: bold;
+.title-h p a:hover {
+  font-weight: bold;
 }
 
 #scrollTopBtn {
-  display: none; /* Ẩn ban đầu */
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -44,4 +166,149 @@ body {
 
 #scrollTopBtn:hover {
   background-color: #555;
+}
+#review {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: #0b9ef3;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+/* iPad ngang (tablet >= 768px) */
+@media (max-width: 1024px) {
+  .moman {
+    height: 400px;
+  }
+  .logo {
+    border-radius: 50%;
+    width: 100px;
+  }
+  .moman h1 {
+    color: white;
+    font-size: 60px;
+    font-family: Georgia, serif;
+  }
+  .khauhieu {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+  }
+  .link {
+    display: flex;
+    flex-direction: row;
+  }
+  .link a {
+    color: #4b1b03;
+    text-decoration: none;
+    margin: 0px 10px;
+  }
+  .link a:hover {
+    color: rgb(7, 58, 134);
+  }
+  .link a h4 {
+    font-size: 15px;
+  }
+  .anh_de {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+  }
+  .anh_de img {
+    width: 350px;
+  }
+}
+
+/* iPad dọc, điện thoại lớn (~ 600–767px) */
+@media (max-width: 768px) {
+  .moman {
+    height: 400px;
+  }
+  .logo {
+    border-radius: 50%;
+    width: 100px;
+  }
+  .moman h1 {
+    color: white;
+    font-size: 60px;
+    font-family: Georgia, serif;
+  }
+  .khauhieu {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+  }
+  .link {
+    display: flex;
+    flex-direction: row;
+  }
+  .link a {
+    color: #4b1b03;
+    text-decoration: none;
+    margin: 0px 10px;
+  }
+  .link a:hover {
+    color: rgb(7, 58, 134);
+  }
+  .link a h4 {
+    font-size: 15px;
+  }
+  .anh_de {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+  }
+  .anh_de img {
+    width: 350px;
+  }
+}
+
+/* Điện thoại nhỏ (<= 480px) */
+@media (max-width: 480px) {
+  .moman {
+    height: 400px;
+  }
+  .logo {
+    border-radius: 50%;
+    width: 80px;
+  }
+  .moman h1 {
+    color: white;
+    font-size: 50px;
+    font-family: Georgia, serif;
+  }
+  .khauhieu {
+    font-family: "Allura", cursive;
+    font-size: 30px;
+  }
+  .link {
+    display: flex;
+    flex-direction: row;
+  }
+  .link a {
+    color: #4b1b03;
+    text-decoration: none;
+    margin: 0px 10px;
+  }
+  .link a:hover {
+    color: rgb(7, 58, 134);
+  }
+  .link a h4 {
+    font-size: 14px;
+  }
+  .anh_de {
+    display: flex;
+    justify-content: center;
+    margin-top: -90px;
+  }
+  .anh_de img {
+    width: 350px;
+  }
 }
